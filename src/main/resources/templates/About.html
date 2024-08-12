@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Жабий Банк</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .login-button {
+            position: absolute;
+            top: 10px;
+            right: -150px;
+        }
+
+        .login-button a {
+            background-color: #fff;
+            color: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .login-button a:hover {
+            background-color: #ddd;
+        }
+
+        main {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Жабий Банк</h1>
+        <nav>
+            <ul>
+                <li><a th:href="@{/home}">Главная</a></li>
+                <li><a th:href="@{/services}">Услуги</a></li>
+                <li><a th:href="@{/about}">О нас</a></li>
+                <li><a th:href="@{/contacts}">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="login-button">
+            <a th:href="@{/loginProcess}">Вход в личный кабинет</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <h2>О нас</h2>
+        <p>Жабий Банк был основан в 2024 году с целью предоставления лучших финансовых услуг для жаб и не только.</p>
+        <br>
+        <p>Мы стремимся к инновациям и высокому качеству обслуживания наших клиентов.</p>
+        <br>
+        <p>Мы будем рады видеть вас в лицах наших клиентов</p>
+        <br>
+        <h4>Жабий банк - с заботой о деньгах и природе</h4>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <p>© 2024 Жабий Банк. Все права защищены.</p>
+    </div>
+</footer>
+</body>
+</html>
